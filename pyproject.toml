@@ -1,0 +1,23 @@
+[project]
+name = "oswtool"
+description = "A Python CLI tool to pack and unpack OSW files from the classic GTA: SA Mobile version."
+authors = [{ name = "santiago046" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT License" }
+dependencies = ["click>=8.0.0"]
+dynamic = ["version"]
+
+[project.scripts]
+oswtool = "gtasa_oswtool.cli:main"
+
+[project.urls]
+homepage = "https://github.com/santiago046/gtasa-oswtool"
+repository = "https://github.com/santiago046/gtasa-oswtool"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = { attr = "gtasa_oswtool.__version__" }
