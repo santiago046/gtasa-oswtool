@@ -20,7 +20,7 @@ To install `oswtool`, you can use pip. Follow these steps:
 
 1. Clone this repository:
     ```
-    git clone https://github.com/santiago046/oswtool
+    git clone https://github.com/santiago046/gtasa-oswtool
     ```
 
 2. Change to the project directory:
